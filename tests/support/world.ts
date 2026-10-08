@@ -26,7 +26,7 @@ export class CustomWorld extends World {
 
   async openBrowser() {
     this.browser = await chromium.launch({
-      headless: false,
+      headless: true,
     });
 
     this.context = await this.browser.newContext();
