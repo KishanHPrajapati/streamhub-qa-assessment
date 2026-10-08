@@ -1,0 +1,29 @@
+{
+  "name": "streamhub-qa-assessment",
+  "version": "1.0.0",
+  "description": "StreamHub QA Assessment - Playwright + Cucumber BDD Framework",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report reports/playwright-report",
+    "test:cucumber": "cucumber-js",
+    "test:cucumber:tags": "cucumber-js --tags \"@ui\"",
+    "test:cucumber:smoke": "cucumber-js --tags \"@smoke\"",
+    "test:cucumber:regression": "cucumber-js --tags \"@regression\""
+  },
+  "keywords": ["playwright", "cucumber", "bdd", "qa", "automation"],
+  "author": "Kishan Prajapati",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4",
+    "cross-env": "^10.1.0",
+    "dotenv": "^18.0.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
