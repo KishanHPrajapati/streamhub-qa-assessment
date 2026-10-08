@@ -10,7 +10,10 @@ Before(async function (this: CustomWorld) {
 });
 
 After(async function (this: CustomWorld, scenario) {
-  if (scenario.result?.status === 'FAILED') {
+  if (
+    scenario.result?.status === 'FAILED' &&
+    this.page
+  ) {
     await this.page.screenshot({
       path: `screenshots/${Date.now()}-failure.png`,
       fullPage: true
