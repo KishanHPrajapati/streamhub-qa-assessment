@@ -14,7 +14,13 @@
     "test:cucumber:smoke": "cucumber-js --tags \"@smoke\"",
     "test:cucumber:regression": "cucumber-js --tags \"@regression\""
   },
-  "keywords": ["playwright", "cucumber", "bdd", "qa", "automation"],
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "bdd",
+    "qa",
+    "automation"
+  ],
   "author": "Kishan Prajapati",
   "license": "ISC",
   "devDependencies": {
@@ -24,6 +30,7 @@
     "cross-env": "^10.1.0",
     "dotenv": "^18.0.5",
     "tsx": "^4.23.15",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "wait-on": "^9.5.1"
   }
 }
